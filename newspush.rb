@@ -25,8 +25,8 @@ def push_latest_news
 	    n.event = "Alert"
 	    n.description = latest_title
 	    n.url = latest_url
-	    return latest_title
 	  end
+	  return latest_title
 	else
 		return "Sleeping"
 	end
