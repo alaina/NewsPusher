@@ -20,7 +20,7 @@ def push_latest_news
 
 	if Time.now.hour >= 8
 	  Prowly.notify do |n|
-	  	n.apikey =  "2962a6694798b52f045ac3453a60480eca43ac67"
+	  	n.apikey =  ENV["PROWL_KEY"]
 	  	n.application = "News Pusher"
 	    n.event = "Alert"
 	    n.description = latest_title
